@@ -24,3 +24,11 @@
 pnpm install && nx serve dev
 
 ```
+
+## Publish Library
+
+```shell
+
+nx publish
+
+```
