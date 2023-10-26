@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "root",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "src",
   "projectType": "library",
@@ -25,6 +25,16 @@
         ]
       }
     },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "config": "vitest.config.ts",
+        "passWithNoTests": true
+      }
+    },
     "publish": {
       "executor": "nx:run-commands",
       "options": {
@@ -34,7 +44,7 @@
         ],
         "cwd": "dist"
       },
-      "dependsOn": ["build"]
+      "dependsOn": ["test", "build"]
     }
   }
 }

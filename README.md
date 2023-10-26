@@ -21,7 +21,7 @@
 
 ```shell
 
-pnpm install && nx serve dev
+nx serve dev
 
 ```
 
@@ -31,4 +31,10 @@ pnpm install && nx serve dev
 
 nx publish
 
+```
+
+## Run Tests
+
+```shell
+nx test
 ```

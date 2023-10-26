@@ -1,4 +1,4 @@
-import { hello } from '@project'
+import { hello } from '@lib'
 
 export const Entrypoint = () => {
   return hello
