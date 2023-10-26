@@ -8,13 +8,14 @@
     "outDir": "../dist/out-tsc",
     "types": [
       "node",
+      "@testing-library/jest-dom",
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@lib": ["src/index.ts"],
-      "@/*": ["src/*"]
+      "@lib": ["./index.ts"],
+      "@/*": ["./*"]
     }
   },
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
